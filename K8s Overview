@@ -1,0 +1,33 @@
+Kubernetes, often abbreviated as K8s, is an open-source container orchestration platform designed to automate the deployment, scaling, and management of containerized applications. Developed by Google and later released as an open-source project, Kubernetes provides a robust and flexible infrastructure for deploying and managing applications in containers. Here's an overview of key Kubernetes concepts:
+
+Container Orchestration:
+Kubernetes automates the deployment and orchestration of containers, handling tasks such as scaling, load balancing, and application health monitoring. It ensures that applications run consistently across various environments.
+
+Nodes and Clusters:
+Kubernetes operates on a cluster of machines called nodes. A cluster can have one or more nodes, with each node running the necessary services to manage containers. Nodes can be physical or virtual machines.
+
+Pods:
+The smallest deployable unit in Kubernetes is a pod. A pod is a group of one or more containers that share the same network namespace and storage. Containers within a pod can communicate with each other using localhost, making them suitable for co-located, tightly coupled applications.
+
+Deployments:
+Deployments define the desired state of applications and manage the deployment and scaling of replicas. They provide a declarative way to describe how many instances of an application should be running and handle updates and rollbacks.
+
+Services:
+Kubernetes Services expose pods to the network and provide a stable endpoint for communication. Services enable load balancing and allow applications to discover and communicate with each other within the cluster.
+
+Ingress:
+Ingress controllers manage external access to services within a cluster. They provide HTTP and HTTPS routing, load balancing, and allow the definition of rules for handling external traffic.
+
+ConfigMaps and Secrets:
+ConfigMaps store configuration data, while Secrets store sensitive information, such as passwords or API keys. Both are used to decouple configuration from containerized applications.
+
+Namespaces:
+Namespaces provide a way to organize and isolate resources within a cluster. They are used to create virtual clusters within the same physical cluster, allowing multiple teams or projects to use the same Kubernetes environment.
+
+Container Runtime Interface (CRI):
+Kubernetes is designed to be container runtime agnostic. It supports various container runtimes, such as Docker, containerd, and others, through the Container Runtime Interface.
+
+Extensibility:
+Kubernetes is highly extensible, allowing users to define custom resources and controllers. This extensibility enables the adoption of additional functionalities and integration with third-party tools and services.
+
+Kubernetes has become a cornerstone in modern container orchestration and is widely adopted for managing containerized applications in both on-premises and cloud environments. Its declarative configuration, scalability, and resilience make it a powerful tool for building, deploying, and managing containerized microservices architectures.
